@@ -17,7 +17,7 @@ response = requests.get(url, params=params)
 if response.status_code == 200:
     csv_data = response.text
     csv_reader = csv.reader(StringIO(csv_data))
-    file_name = f"{company}_financial_data_hourly.csv"
+    file_name = f"{company}_financial_data_intraday.csv"
         
     with open(file_name, "w", newline="") as csv_file:
         csv_writer = csv.writer(csv_file)

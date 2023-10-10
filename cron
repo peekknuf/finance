@@ -1,0 +1,2 @@
+05 9 * * * /usr/bin/python3 /home/peekknuf/finance/api_csv.py
+06 9 * * * /bin/bash /home/peekknuf/finance/import.sh
